@@ -16,6 +16,7 @@ function countChar(b_str, s){
 }
 
 let beans = "B3SLWBB7W0KSABBBBKLSM5"; //7 B
-simbol = 'W';
+let simbol = 'W';
 console.log(countBs(beans));
 console.log(countChar(beans, simbol));
+
