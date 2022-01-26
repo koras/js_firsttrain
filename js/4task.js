@@ -1,8 +1,6 @@
 function min (a,b){
-    if (a > b)
-        return b
-    else
-        return a
+    return (a > b)?b:a;
 }
 console.log(min(10, 0));
 console.log(min(0, -10));
+// отлично можно сократить 
