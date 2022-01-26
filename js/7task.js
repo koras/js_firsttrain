@@ -2,13 +2,14 @@ function range (f, l, st){
     let arr = [];
     let a = 0;
     if (f < l || f === l) {
-        for (i = f; i <= l; i += st){
+        //  i лучше объявить, потому что переменная может быть определена строго глобально и будет ошибка
+        for (let i = f; i <= l; i += st){
             arr[a] = i;
             a++;
         }
     }
     if (f > l){
-        for (i = f; i >= l; i += st){
+        for (let i = f; i >= l; i += st){
             arr[a] = i;
             a++;
         }
@@ -17,7 +18,7 @@ function range (f, l, st){
 }
 function sum (arr){
     let rez = 0;
-    for (i = 0; i < arr.length; i++)
+    for (let i = 0; i < arr.length; i++)
         rez += arr[i];
     return rez;
 }
